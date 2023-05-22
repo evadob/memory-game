@@ -3,7 +3,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -32,8 +31,8 @@ button:focus {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 40px;
-  gap: 20px;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .p-turns {

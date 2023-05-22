@@ -71,10 +71,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Memory Game</h1>
+      <h1>Pexeso</h1>
 
       <button className="btn-new" onClick={shuffleCards}>
-        New Game
+        Nová hra
       </button>
 
       <div className="card-grid">
@@ -89,7 +89,7 @@ function App() {
         ))}
       </div>
 
-      <p className="p-turns">Turns: {turns}</p>
+      <p className="p-turns">Počet tahů: {turns}</p>
     </div>
   );
 }

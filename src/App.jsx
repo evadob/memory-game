@@ -1,5 +1,5 @@
 import "./App.css";
-import { MemoryGame } from "./components/MemoryGame";
+import { MemoryGame } from "./pages/MemoryGame/MemoryGame";
 
 export const App = () => {
   return (

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./MemoryGame.css";
-import OneCard from "./OneCard/OneCard";
+import OneCard from "../../components/OneCard/OneCard";
 
 // declaration of the variables and state
 // array of card images (each image is an object with id, src and matched properties)

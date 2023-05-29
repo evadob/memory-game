@@ -2,16 +2,17 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import OneCard from "./components/OneCard/OneCard";
 
+// declaration of the variables and state
 const cardImages = [
-  { src: "img/card-1.png", matched: false },
-  { src: "img/card-2.png", matched: false },
-  { src: "img/card-3.png", matched: false },
-  { src: "img/card-4.png", matched: false },
-  { src: "img/card-5.png", matched: false },
-  { src: "img/card-6.png", matched: false },
+  { id: 1, src: "img/card-1.png", matched: false },
+  { id: 2, src: "img/card-2.png", matched: false },
+  { id: 3, src: "img/card-3.png", matched: false },
+  { id: 4, src: "img/card-4.png", matched: false },
+  { id: 5, src: "img/card-5.png", matched: false },
+  { id: 6, src: "img/card-6.png", matched: false },
 ];
 
-function App() {
+export const App = () => {
   const [cards, setCards] = useState([]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
@@ -92,6 +93,4 @@ function App() {
       <p className="p-turns">Počet tahů: {turns}</p>
     </div>
   );
-}
-
-export default App;
+};

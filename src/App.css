@@ -27,17 +27,3 @@ button:hover,
 button:focus {
   background: rgb(246, 177, 116, 0.8);
 }
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 1rem;
-  gap: 1rem;
-}
-
-.p-turns {
-  font-family: "Amatic SC", cursive;
-  font-size: 2rem;
-  margin-top: 40px;
-  font-weight: bold;
-}

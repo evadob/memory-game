@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MemoryGame.css";
-import OneCard from "../../components/OneCard/OneCard";
+import { OneCard } from "../../components/OneCard/OneCard";
 
-// declaration of the variables and state
+export interface Card {
+  id: number;
+  src: string;
+  matched: boolean;
+}
+
 // array of card images (each image is an object with id, src and matched properties)
-const cardImages = [
+const cards: Card[] = [
   { id: 1, src: "img/card-1.png", matched: false },
   { id: 2, src: "img/card-2.png", matched: false },
   { id: 3, src: "img/card-3.png", matched: false },
@@ -14,18 +19,16 @@ const cardImages = [
 ];
 
 export const MemoryGame = () => {
-  const [cards, setCards] = useState([]);
+  const [cards, setCards] = useState<Card[]>([]);
   const [turns, setTurns] = useState(0);
   const [score, setScore] = useState(0);
-  const [choiceOne, setChoiceOne] = useState(null);
-  const [choiceTwo, setChoiceTwo] = useState(null);
+  const [choiceOne, setChoiceOne] = useState<Card | null>(null);
+  const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
   const [disabled, setDisabled] = useState(false);
 
   // function for shuffling the cards
   const shuffleCards = () => {
-    const shuffledCards = [...cardImages, ...cardImages]
-      .sort(() => Math.random() - 0.5)
-      .map((card) => ({ ...card, id: Math.random() }));
+    const shuffledCards = [...cards, ...cards].sort(() => Math.random() - 0.5);
 
     setChoiceOne(null);
     setChoiceTwo(null);
@@ -35,7 +38,7 @@ export const MemoryGame = () => {
   };
 
   // handle a choice
-  const handleChoice = (card) => {
+  const handleChoice = (card: Card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 

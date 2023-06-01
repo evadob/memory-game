@@ -1,6 +1,20 @@
+import React from "react";
 import "./OneCard.css";
+import { Card } from "../../pages/MemoryGame/MemoryGame";
 
-export default function OneCard({ card, handleChoice, flipped, disabled }) {
+interface OneCardProps {
+  card: Card;
+  handleChoice: (card: Card) => void;
+  flipped: boolean;
+  disabled: boolean;
+}
+
+export const OneCard = ({
+  card,
+  handleChoice,
+  flipped,
+  disabled,
+}: OneCardProps) => {
   const handleClick = () => {
     if (!disabled) {
       handleChoice(card);
@@ -20,4 +34,4 @@ export default function OneCard({ card, handleChoice, flipped, disabled }) {
       </div>
     </div>
   );
-}
+};

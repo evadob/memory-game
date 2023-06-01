@@ -61,8 +61,6 @@ export const MemoryGame = () => {
     }
   }, [choiceOne, choiceTwo]);
 
-  // console.log(cards);
-
   // reset the choices and increase the turns
   const resetChoices = () => {
     setChoiceOne(null);

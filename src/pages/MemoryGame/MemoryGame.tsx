@@ -24,8 +24,7 @@ export const MemoryGame = () => {
   const [choiceOne, setChoiceOne] = useState<Card | null>(null);
   const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
   const [disabled, setDisabled] = useState(false);
-
-  // shuffling the cards
+    
   const shuffleCards = () => {
     const shuffledCards = [...initialCards, ...initialCards].sort(
       () => Math.random() - 0.5
@@ -46,6 +45,7 @@ export const MemoryGame = () => {
 
   // check if the choices are a match
   useEffect(() => {
+
     // check if both choices are not null
     if (choiceOne && choiceTwo) {
       setDisabled(true);
@@ -57,17 +57,27 @@ export const MemoryGame = () => {
             if (card.src === choiceOne.src) {
               return { ...card, matched: true };
               // otherwise return the card
+    if (choiceOne && choiceTwo) {
+      setDisabled(true);
+      if (choiceOne.src === choiceTwo.src) {
+        setCards((prevCards) => {
+          return prevCards.map((card) => {
+            if (card.src === choiceOne.src) {
+              return { ...card, matched: true };
+
+              
             } else {
               return card;
             }
           });
         });
-        // reset the choices and increase the score
         resetChoices();
         increaseScore();
-        // if the choices are not a match, reset the choices
+
       } else {
-        //  wait 1 second and then reset the choices
+        resetChoices();
+        increaseScore();
+      } else {
         setTimeout(() => resetChoices(), 1000);
       }
     }
@@ -81,12 +91,10 @@ export const MemoryGame = () => {
     setDisabled(false);
   };
 
-  // increase the score
   const increaseScore = () => {
     setScore((prevScore) => prevScore + 1);
   };
 
-  // shuffle the cards when the component mounts
   useEffect(() => {
     shuffleCards();
   }, []);

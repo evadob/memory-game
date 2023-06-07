@@ -8,8 +8,7 @@ export interface Card {
   matched: boolean;
 }
 
-// array of card images (each image is an object with id, src and matched properties)
-const cards: Card[] = [
+const initialCards: Card[] = [
   { id: 1, src: "img/card-1.png", matched: false },
   { id: 2, src: "img/card-2.png", matched: false },
   { id: 3, src: "img/card-3.png", matched: false },
@@ -25,11 +24,13 @@ export const MemoryGame = () => {
   const [choiceOne, setChoiceOne] = useState<Card | null>(null);
   const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
   const [disabled, setDisabled] = useState(false);
-
-  // function for shuffling the cards
+    
   const shuffleCards = () => {
-    const shuffledCards = [...cards, ...cards].sort(() => Math.random() - 0.5);
+    const shuffledCards = [...initialCards, ...initialCards].sort(
+      () => Math.random() - 0.5
+    );
 
+    // reset the game
     setChoiceOne(null);
     setChoiceTwo(null);
     setCards(shuffledCards);
@@ -44,6 +45,18 @@ export const MemoryGame = () => {
 
   // check if the choices are a match
   useEffect(() => {
+
+    // check if both choices are not null
+    if (choiceOne && choiceTwo) {
+      setDisabled(true);
+      // check if the choices are a match
+      if (choiceOne.src === choiceTwo.src) {
+        setCards((prevCards) => {
+          return prevCards.map((card) => {
+            // if the card is the same as the choice, set matched to true
+            if (card.src === choiceOne.src) {
+              return { ...card, matched: true };
+              // otherwise return the card
     if (choiceOne && choiceTwo) {
       setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
@@ -51,11 +64,17 @@ export const MemoryGame = () => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
               return { ...card, matched: true };
+
+              
             } else {
               return card;
             }
           });
         });
+        resetChoices();
+        increaseScore();
+
+      } else {
         resetChoices();
         increaseScore();
       } else {

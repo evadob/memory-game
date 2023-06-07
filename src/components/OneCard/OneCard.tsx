@@ -15,12 +15,12 @@ export const OneCard = ({
   flipped,
   disabled,
 }: OneCardProps) => {
+
   const handleClick = () => {
     if (!disabled) {
       handleChoice(card);
     }
   };
-
   return (
     <div className="card">
       <div className={flipped ? "flipped" : ""}>

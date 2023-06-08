@@ -26,7 +26,13 @@ export const MemoryGame = () => {
   const [disabled, setDisabled] = useState(false);
 
   const shuffleCards = () => {
-    const shuffledCards = [...initialCards, ...initialCards].sort(
+    // create a copy of the initial cards and add an id to them
+    const copyInitialCards = initialCards.map((card, index) => ({
+      ...card,
+      id: index + initialCards.length + 1,
+    }));
+
+    const shuffledCards = [...initialCards, ...copyInitialCards].sort(
       () => Math.random() - 0.5
     );
 
@@ -63,11 +69,8 @@ export const MemoryGame = () => {
         resetChoices();
         increaseScore();
       } else {
-        resetChoices();
-        increaseScore();
+        setTimeout(() => resetChoices(), 1000);
       }
-    } else {
-      setTimeout(() => resetChoices(), 1000);
     }
   }, [choiceOne, choiceTwo]);
 
@@ -101,7 +104,11 @@ export const MemoryGame = () => {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
+            flipped={
+              card.id === choiceOne?.id ||
+              card.id === choiceTwo?.id ||
+              card.matched
+            }
             disabled={disabled}
           />
         ))}

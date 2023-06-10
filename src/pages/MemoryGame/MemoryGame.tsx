@@ -21,39 +21,48 @@ export const MemoryGame = () => {
   const [cards, setCards] = useState<Card[]>([]);
   const [turns, setTurns] = useState(0);
   const [score, setScore] = useState(0);
-  const [choiceOne, setChoiceOne] = useState<Card | null>(null);
-  const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
+  const [choiceOne, setChoiceOne] = useState<number>(0);
+  const [choiceTwo, setChoiceTwo] = useState<number>(0);
   const [disabled, setDisabled] = useState(false);
 
   const shuffleCards = () => {
-    const shuffledCards = [...initialCards, ...initialCards].sort(
+    // create a copy of the initial cards and add an id to them
+    const copyInitialCards = initialCards.map((card, index) => ({
+      ...card,
+      id: index + initialCards.length + 1,
+    }));
+
+    const shuffledCards = [...initialCards, ...copyInitialCards].sort(
       () => Math.random() - 0.5
     );
 
     // reset the game
-    setChoiceOne(null);
-    setChoiceTwo(null);
+    setChoiceOne(0);
+    setChoiceTwo(0);
     setCards(shuffledCards);
     setTurns(0);
     setScore(0);
   };
 
   // handle a choice
-  const handleChoice = (card: Card) => {
-    choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
+  const handleChoice = (cardId: number) => {
+    choiceOne ? setChoiceTwo(cardId) : setChoiceOne(cardId);
   };
 
   // check if the choices are a match
   useEffect(() => {
-    // check if both choices are not null
-    if (choiceOne && choiceTwo) {
+    // check if both choices are not zero
+    if (choiceOne !== 0 && choiceTwo !== 0) {
       setDisabled(true);
+      // get the choice cards
+      const cardOne = cards.find((card) => card.id === choiceOne);
+      const cardTwo = cards.find((card) => card.id === choiceTwo);
       // check if the choices are a match
-      if (choiceOne.src === choiceTwo.src) {
+      if (cardOne?.src === cardTwo?.src) {
         setCards((prevCards) => {
           return prevCards.map((card) => {
             // if the card is the same as the choice, set matched to true
-            if (card.src === choiceOne.src) {
+            if (card.id === choiceOne || card.id === choiceTwo) {
               return { ...card, matched: true };
             } else {
               return card;
@@ -63,18 +72,15 @@ export const MemoryGame = () => {
         resetChoices();
         increaseScore();
       } else {
-        resetChoices();
-        increaseScore();
+        setTimeout(() => resetChoices(), 1000);
       }
-    } else {
-      setTimeout(() => resetChoices(), 1000);
     }
   }, [choiceOne, choiceTwo]);
 
   // reset the choices and increase the turns
   const resetChoices = () => {
-    setChoiceOne(null);
-    setChoiceTwo(null);
+    setChoiceOne(0);
+    setChoiceTwo(0);
     setTurns((prevTurns) => prevTurns + 1);
     setDisabled(false);
   };
@@ -101,7 +107,9 @@ export const MemoryGame = () => {
             key={card.id}
             card={card}
             handleChoice={handleChoice}
-            flipped={card === choiceOne || card === choiceTwo || card.matched}
+            flipped={
+              card.id === choiceOne || card.id === choiceTwo || card.matched
+            }
             disabled={disabled}
           />
         ))}

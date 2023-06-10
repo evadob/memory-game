@@ -1,0 +1,28 @@
+.quizList {
+  font-size: 2rem;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.quizList li {
+  padding: 20px 20px;
+  border-radius: 20px;
+  background-color: #ffe9e4;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.quizList li .listPhoto {
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+}
+
+.listTitle div {
+}

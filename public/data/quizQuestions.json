@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "question": "Kdo byl vezír?",
+    "possibleAnswers": ["Velitel armády", "Nejvyšší státní úředník", "Věštec"],
+    "correctAnswer": 1,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 2,
+    "question": "Kdo nastoupil na trůn po smrti faraona?",
+    "possibleAnswers": [
+      "Nejstarší syn",
+      "Nejstarší potomek - nezáleželo na pohlaví",
+      "O nástupci rozhodl vezír"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 3,
+    "question": "Která skupina egyptského obyvatelstva byla nejpočetnější?",
+    "possibleAnswers": ["Rolníci a řemeslníci", "Otroci", "Vojáci"],
+    "correctAnswer": 0,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 4,
+    "question": "Z čeho se vyráběl papyrus?",
+    "possibleAnswers": [
+      "Šáchor papírodárný",
+      "Řešetlák papírový",
+      "Papírovec obecný"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 5,
+    "question": "Co je to hedžet?",
+    "possibleAnswers": [
+      "Koruna Dolního Egypta",
+      "Koruna sjednoceného Egypta",
+      "Koruna Horního Egypta"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 6,
+    "question": "Které tvrzení je pravdivé?",
+    "possibleAnswers": [
+      "Mastaba je jiný název pro pyramidu",
+      "Dolní egypt se nachází jižně od Horního",
+      "Egyptská říše měla trvání déle než 3000 let"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 7,
+    "question": "Proč Egypťané mumifikovali zemřelé?",
+    "possibleAnswers": [
+      "Chtěli vytvořit armádu nemrtvých, která by je chránila ve svých pyramidách",
+      "Zachování těla pro posmrtný život, aby se tělo mohlo vrátit do fyzické podoby",
+      "Kvůli estetickým důvodům, aby těla vypadala lépe během pohřebních ceremonií a byla atraktivní pro bohy."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 8,
+    "question": "Kdo rozluštil hieroglyfy?",
+    "possibleAnswers": [
+      "Giovanni Battista Belzoni",
+      "Howard Carter",
+      "Jean-François Champollion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 9,
+    "question": "Kdo byl Hor?",
+    "possibleAnswers": [
+      "Egyptský král, který byl zbožštěn po své smrti",
+      "Bůh nebe, ochránce faraóna, symbol královské moci",
+      "Byl egyptskou verzí boha války a chaosu"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "id": 10,
+    "question": "K čemu sloužily kanopy?",
+    "possibleAnswers": [
+      "Sloužily jako nádoby, do kterých byly ukládány vnitřnosti mrtvých během procesu mumifikace",
+      "Jednalo se o zbraně, které se používaly při obraně proti nepřátelům",
+      "Byly to speciální lodě používané ve starověkém Egyptě pro přepravu zemřelých do jejich posmrtného odpočinku"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  }
+]

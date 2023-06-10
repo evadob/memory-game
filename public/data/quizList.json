@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Lekce 1",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  },
+  {
+    "id": 2,
+    "name": "Lekce 2",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  },
+  {
+    "id": 3,
+    "name": "Lekce 3",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  },
+  {
+    "id": 4,
+    "name": "Lekce 4",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  },
+  {
+    "id": 5,
+    "name": "Lekce 5",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  },
+  {
+    "id": 6,
+    "name": "Lekce 6",
+    "title": "Dějiny Egypta",
+    "numberOfQuestions": 5
+  }
+]

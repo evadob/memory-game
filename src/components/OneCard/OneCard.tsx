@@ -4,7 +4,7 @@ import { Card } from "../../pages/MemoryGame/MemoryGame";
 
 interface OneCardProps {
   card: Card;
-  handleChoice: (card: Card) => void;
+  handleChoice: (cardId: number) => void;
   flipped: boolean;
   disabled: boolean;
 }
@@ -15,10 +15,9 @@ export const OneCard = ({
   flipped,
   disabled,
 }: OneCardProps) => {
-
   const handleClick = () => {
     if (!disabled) {
-      handleChoice(card);
+      handleChoice(card.id);
     }
   };
   return (

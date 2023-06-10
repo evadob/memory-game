@@ -3,9 +3,13 @@ import classes from "./QuizQuestion.module.css";
 
 interface QuizQuestionProps {
   question?: QuizQuestionModel;
+  handleAnswerClick: (answerIndex: number) => void;
 }
 
-export const QuizQuestion = ({ question }: QuizQuestionProps) => {
+export const QuizQuestion = ({
+  question,
+  handleAnswerClick,
+}: QuizQuestionProps) => {
   return (
     <div className={classes.container}>
       <div className={classes.quizPhoto}></div>
@@ -13,7 +17,9 @@ export const QuizQuestion = ({ question }: QuizQuestionProps) => {
         <h2>{question?.question}</h2>
         <ul className={classes.quizAnswers}>
           {question?.possibleAnswers.map((answer, index) => (
-            <li key={index}>{answer}</li>
+            <li key={index} onClick={() => handleAnswerClick(index)}>
+              {answer}
+            </li>
           ))}
         </ul>
       </div>

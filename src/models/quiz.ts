@@ -3,7 +3,7 @@ export interface QuizQuestion {
   questionNumber: number;
   question: string;
   possibleAnswers: string[];
-  correctAnswer: number;
+  correctAnswerIndex: number;
   explanation: string;
   imageUrl: string;
 }

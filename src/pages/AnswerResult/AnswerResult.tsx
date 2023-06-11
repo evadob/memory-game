@@ -5,12 +5,14 @@ interface AnswerResultProps {
   isCorrect: boolean;
   question?: QuizQuestionModel;
   handleNextQuestionClick: () => void;
+  isLastQuestion: boolean;
 }
 
 export const AnswerResult = ({
   isCorrect,
   question,
   handleNextQuestionClick,
+  isLastQuestion,
 }: AnswerResultProps) => {
   return (
     <div className={classes.container}>
@@ -25,7 +27,7 @@ export const AnswerResult = ({
         <h2>{isCorrect ? "Správně" : "Špatně"}</h2>
         <div className={classes.answerInfo}>{question?.explanation}</div>
         <button className={classes.answerBtn} onClick={handleNextQuestionClick}>
-          Další otázka
+          {isLastQuestion ? "Vyhodnotit lekci" : "Další otázka"}
         </button>
       </div>
     </div>

@@ -1,13 +1,15 @@
 [
   {
     "id": 1,
+    "questionNumber": 1,
     "question": "Kdo byl vezír?",
     "possibleAnswers": ["Velitel armády", "Nejvyšší státní úředník", "Věštec"],
     "correctAnswer": 1,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Vezír byl nejvyšší úředník a důležitý poradce faraona. Měl široké pravomoci a odpovědnost za správu státu a dozor nad různými aspekty vlády. Funkce vezíra byla velmi prestižní a významná. Patřil mezi nejbližší spolupracovníky faraona a byl klíčovou osobou v egyptském politickém systému. Vezír zajišťoval efektivní provádění faraonových příkazů, dohlížel na spravedlivou správu a zajišťoval stabilitu státu."
   },
   {
     "id": 2,
+    "questionNumber": 2,
     "question": "Kdo nastoupil na trůn po smrti faraona?",
     "possibleAnswers": [
       "Nejstarší syn",
@@ -15,17 +17,19 @@
       "O nástupci rozhodl vezír"
     ],
     "correctAnswer": 0,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Po smrti faraona na trůn nastoupil jeho syn. Toto dědičné nástupnictví bylo běžné zejména v době, kdy faraonství bylo koncentrováno v jedné rodině, jako například během období Nové říše."
   },
   {
     "id": 3,
+    "questionNumber": 3,
     "question": "Která skupina egyptského obyvatelstva byla nejpočetnější?",
     "possibleAnswers": ["Rolníci a řemeslníci", "Otroci", "Vojáci"],
     "correctAnswer": 0,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Nejpočetnější skupinou obyvatelstva tvořili rolníci a dělníci. Egyptská společnost byla hierarchicky uspořádaná, a tak byli rolníci a dělníci považováni za nižší třídu. Jejich život se převážně točil kolem práce na polích, zavlažovacích kanálech a stavbě monumentů, jako jsou pyramidy nebo chrámy. Obdělávání půdy bylo základem ekonomiky a potraviny, zejména obilí, hrály významnou roli v jejich životech."
   },
   {
     "id": 4,
+    "questionNumber": 4,
     "question": "Z čeho se vyráběl papyrus?",
     "possibleAnswers": [
       "Šáchor papírodárný",
@@ -33,10 +37,11 @@
       "Papírovec obecný"
     ],
     "correctAnswer": 0,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Papyrus byl vyráběn z rostliny nazývané Šáchor papírodárný (Cyperus papyrus). Tato rostlina se vyskytovala v bažinatých oblastech podél řeky Nil. Pro výrobu papyru byly používány hlavně vlákna, která se nacházela v duté stonkové části rostliny. Výroba papyru byla složitý proces, který vyžadoval zručnost a znalost techniky. Papyrus byl v starověkém Egyptě využíván jako hlavní materiál pro psaní a uchovávání důležitých textů, což sehrálo klíčovou roli ve vývoji egyptské civilizace."
   },
   {
     "id": 5,
+    "questionNumber": 5,
     "question": "Co je to hedžet?",
     "possibleAnswers": [
       "Koruna Dolního Egypta",
@@ -44,10 +49,11 @@
       "Koruna Horního Egypta"
     ],
     "correctAnswer": 2,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Hedžet představoval symbol královské moci a ochranu faraona. Je známý také jako Bílá koruna nebo Horní Egyptská koruna. Hedžet byla jedním z dvou hlavních symbolů moci faraona, druhým byla Dolní Egyptská koruna známá jako Desheret nebo Červená koruna. Tento symbol představoval jižní část Egypta, známou jako Dolní Egypt. Ve spojení byly tyto dvě koruny známé jako Dvě koruny a jejich nošení symbolizovalo sjednocení Egypta a faraonskou vládu nad celým Egyptem. "
   },
   {
     "id": 6,
+    "questionNumber": 6,
     "question": "Které tvrzení je pravdivé?",
     "possibleAnswers": [
       "Mastaba je jiný název pro pyramidu",
@@ -55,10 +61,11 @@
       "Egyptská říše měla trvání déle než 3000 let"
     ],
     "correctAnswer": 2,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Egyptská říše měla jedno z nejdelších trvání ve světové historii, trvající déle než 3000 let. Toto období se dělí do několika fází, které zahrnují období Staré říše, Střední říše a Nové říše."
   },
   {
     "id": 7,
+    "questionNumber": 7,
     "question": "Proč Egypťané mumifikovali zemřelé?",
     "possibleAnswers": [
       "Chtěli vytvořit armádu nemrtvých, která by je chránila ve svých pyramidách",
@@ -66,10 +73,11 @@
       "Kvůli estetickým důvodům, aby těla vypadala lépe během pohřebních ceremonií a byla atraktivní pro bohy."
     ],
     "correctAnswer": 1,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Egypťané prováděli mumifikaci zemřelých z náboženských, ochranných a symbolických důvodů. Věřili v posmrtný život a mumifikace měla zajistit zachování těla pro něj. Tělo bylo považováno za důležitý prvek identity a uchováváním těla se člověk spojoval se svým minulým životem. Mumifikace také připravovala tělo na posmrtný soud, kterému duše byla podrobena. Mumifikace byla významným prvkem egyptských pohřebních rituálů a trvala po celou existenci starověkého Egypta."
   },
   {
     "id": 8,
+    "questionNumber": 8,
     "question": "Kdo rozluštil hieroglyfy?",
     "possibleAnswers": [
       "Giovanni Battista Belzoni",
@@ -77,10 +85,11 @@
       "Jean-François Champollion"
     ],
     "correctAnswer": 2,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Hieroglyfy, starověké egyptské piktografické písmo, byly rozluštěny francouzským jazykovědcem Jeanem-Françoise Champollionem. V roce 1822 Champollion na základě Rosettské desky, která obsahovala stejný text napsaný v hieroglyfech, démotickém písmu a řečtině, přišel s teorií, že hieroglyfy nejsou pouze ideogramy, ale také fonetické znaky reprezentující zvuky."
   },
   {
     "id": 9,
+    "questionNumber": 9,
     "question": "Kdo byl Hor?",
     "possibleAnswers": [
       "Egyptský král, který byl zbožštěn po své smrti",
@@ -88,10 +97,11 @@
       "Byl egyptskou verzí boha války a chaosu"
     ],
     "correctAnswer": 1,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "V egyptské mytologii byl Hor synem boha Ísise a boha Osirise. Byl znám také jako Horus a byl jedním z nejvýznamnějších a nejctihodnějších božstev starověkého Egypta. Hor byl zobrazován jako sokol nebo jako muž se sokolí hlavou. Byl bohem nebe, ochránce faraona a symbolem královské moci. Podle mýtu bojoval s Setem, který zabil jeho otce Osirise, a pomstil jeho smrt. Hor byl také spojen s královskou legitimitou a ochranou země Egypta."
   },
   {
     "id": 10,
+    "questionNumber": 10,
     "question": "K čemu sloužily kanopy?",
     "possibleAnswers": [
       "Sloužily jako nádoby, do kterých byly ukládány vnitřnosti mrtvých během procesu mumifikace",
@@ -99,6 +109,6 @@
       "Byly to speciální lodě používané ve starověkém Egyptě pro přepravu zemřelých do jejich posmrtného odpočinku"
     ],
     "correctAnswer": 0,
-    "explanation": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "explanation": "Kanopy byly ve starověkém Egyptě nádoby nebo urny, které sloužily k uchovávání a oddělenému ukládání vnitřních orgánů zemřelého po mumifikaci. Kanopy byly obvykle vyrobeny ze dřeva nebo kamene a měly tvar lidských nebo zvířecích forem. Každý kanopický nádor reprezentoval určitý orgán a byl chráněn božstvem. Tradičně existovalo čtyři kanopy, které uchovávaly játra, plíce, žaludek a střeva zemřelého. Během mumifikace byly tyto orgány odstraněny z těla a umístěny do kanop. Kanopy byly umisťovány do pohřební komory spolu s mumifikovaným tělem a dalšími pohřebními předměty."
   }
 ]

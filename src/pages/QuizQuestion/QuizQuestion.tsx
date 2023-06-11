@@ -12,11 +12,11 @@ export const QuizQuestion = ({
 }: QuizQuestionProps) => {
   return (
     <div className={classes.container}>
-      <div className={classes.quizPhoto}></div>
+      <img className={classes.quizPhoto} src={question?.imageUrl} />
       <div className={classes.quizQuestion}>
         <h2>{question?.question}</h2>
         <ul className={classes.quizAnswers}>
-          {question?.possibleAnswers.map((answer, index) => (
+          {question?.possibleAnswers?.map((answer, index) => (
             <li key={index} onClick={() => handleAnswerClick(index)}>
               {answer}
             </li>

@@ -1,9 +1,11 @@
 export interface QuizQuestion {
   id: number;
+  questionNumber: number;
   question: string;
   possibleAnswers: string[];
   correctAnswer: number;
   explanation: string;
+  imageUrl: string;
 }
 
 export interface QuizListItem {
@@ -11,9 +13,10 @@ export interface QuizListItem {
   name: string;
   title: string;
   numberOfQuestions: number;
+  imageUrl: string;
 }
 
 export type QuizParams = {
-  questionSetId: string;
-  questionId: string;
+  quizId: string;
+  questionNumber: string;
 };

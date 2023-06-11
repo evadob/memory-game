@@ -1,30 +1,32 @@
+import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import quizQuestions from "../../../public/data/quizQuestions.json";
-import {
-  QuizParams,
-  QuizQuestion as QuizQuestionModel,
-} from "../../models/quiz";
+import { useQuizQuestionsQuery } from "../../api/useQuizQuestionsQuery";
+import { QuizParams } from "../../models/quiz";
 import { AnswerResult } from "../AnswerResult/AnswerResult";
 import { QuizQuestion } from "../QuizQuestion/QuizQuestion";
-import { useState } from "react";
 
 export const Quiz = () => {
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
-  const { questionId, questionSetId } = useParams<QuizParams>();
+  const { questionNumber, quizId } = useParams<QuizParams>();
   const navigate = useNavigate();
 
-  if (!questionId) {
+  const parsedQuizId = quizId ? +quizId : 0;
+  const parsedQuestionNumber = questionNumber ? +questionNumber : 0;
+
+  const { data: question } = useQuizQuestionsQuery(
+    parsedQuizId,
+    parsedQuestionNumber
+  );
+
+  if (!questionNumber) {
     throw Error("Missing question id");
   }
 
-  const question: QuizQuestionModel | undefined = quizQuestions.find(
-    (question: QuizQuestionModel) => question.id === +questionId
-  );
 
   const handleNextQuestionClick = () => {
     setIsCorrect(null);
-    const nextQuestionId = +questionId + 1;
-    navigate(`/quiz/${questionSetId}/${nextQuestionId}`);
+    const nextQuestionNumber = +questionNumber + 1;
+    navigate(`/quiz/${quizId}/${nextQuestionNumber}`);
   };
 
   const handleAnswerClick = (answerIndex: number) => {

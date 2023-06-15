@@ -18,6 +18,10 @@
   height: 7rem;
 }
 
+.quizList li:hover {
+  background-color: #ffd8cf;
+}
+
 .quizListNumber {
   margin: auto;
 }

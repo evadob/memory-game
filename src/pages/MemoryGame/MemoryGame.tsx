@@ -58,7 +58,6 @@ export const MemoryGame = () => {
     // check if both choices are not zero
     if (choiceOne !== 0 && choiceTwo !== 0) {
       setDisabled(true);
-      // get the choice cards
       const cardOne = cards.find((card) => card.id === choiceOne);
       const cardTwo = cards.find((card) => card.id === choiceTwo);
       // check if the choices are a match
@@ -89,6 +88,7 @@ export const MemoryGame = () => {
     setDisabled(false);
   };
 
+  // increase the score
   const increaseScore = () => {
     setScore((prevScore) => prevScore + 1);
     // finished game
@@ -97,6 +97,7 @@ export const MemoryGame = () => {
     }
   };
 
+  // shuffle the cards on the first render
   useEffect(() => {
     shuffleCards();
   }, []);

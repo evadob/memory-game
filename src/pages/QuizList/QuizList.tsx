@@ -25,7 +25,7 @@ export const QuizList = () => {
             <div>{item.name}</div>
             {item.title}
           </div>
-          <span>{item.numberOfQuestions}</span>
+          <span className={classes.quizListNumber}>{item.numberOfQuestions}</span>
         </li>
       ))}
     </ul>

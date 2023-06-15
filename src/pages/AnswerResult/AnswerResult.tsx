@@ -16,12 +16,22 @@ export const AnswerResult = ({
 }: AnswerResultProps) => {
   return (
     <div className={classes.container}>
+      {/* 
+      old code with the thumbs up icon
       <img
         className={
           classes.answerPhoto +
           (isCorrect ? "" : " " + classes.answerPhotoIncorrect)
         }
         src="../../../public/img/answerResultImg/thumbs-icon.png"
+      /> */}
+      <img
+        className={classes.answerPhoto}
+        src={
+          isCorrect
+            ? "../../../public/img/answerResultImg/rightAnswer.png"
+            : "../../../public/img/answerResultImg/wrongAnswer.png"
+        }
       />
       <div className={classes.answerContent}>
         <h2>{isCorrect ? "Správně" : "Špatně"}</h2>

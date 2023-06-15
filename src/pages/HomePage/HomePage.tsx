@@ -13,7 +13,11 @@ export const HomePage = () => {
 
   return (
     <div className={classes.container}>
-      <h1>Otestujte své znalosti a ukažte to ostatním</h1>
+      <h1>
+        Prozkoumej tajemný svět starověkého Egypta 
+        𓀀
+      </h1>
+      <h3>Vyber si hru, ve které procvičíš své znalosti:</h3>
       <div className={classes.buttons}>
         <button className={classes.btn} onClick={handleQuizButtonClick}>
           Kvíz

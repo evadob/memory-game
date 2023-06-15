@@ -1,0 +1,87 @@
+.gameComponent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
+  gap: 1rem;
+  max-height: 20%;
+}
+
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  margin-right: 100px;
+}
+
+.gameInfo {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 2;
+  margin-top: 1rem;
+}
+
+.pTurns {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.pMatches {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.btnNew {
+  font-family: "Amatic SC", cursive;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0;
+  background: #ffe6b8;
+  color: #353535;
+  cursor: pointer;
+  transition: background 300ms;
+}
+
+button:hover,
+button:focus {
+  background: #ffcf77;
+}
+
+.modalContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.modalHeading {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.modalParagraph {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}

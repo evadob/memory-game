@@ -1,13 +1,53 @@
-.container {
+body {
+  background: url(../../../public/img/backgrounds/ufiffi_ancient_egypt_monuments_in_a_desert._painted_with_waterc_118a7f34-ff56-4d3a-93b7-c5196e2164e5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #513500;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #513500;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 90%;
+  height: 1px;
+  background: #513500;
+  margin: 2rem auto;
 }
 
 .buttons {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+  color: #513500;
 }
 
 .btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
+  padding: 1rem 5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   border: 1px solid rgb(198, 198, 198);
+  font-family: "Amatic SC", cursive;
+  background: #ffe6b8;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.btn:hover,
+.btn:focus {
+  background: #ffcf77;
 }

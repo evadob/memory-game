@@ -10,32 +10,9 @@
 
 body {
   font-family: "Amatic SC", cursive;
-  background: #ffe68b;
 }
 
 #root {
   max-width: 1280px;
   margin: 0 auto;
-}
-
-h1 {
-  font-family: "Amatic SC", cursive;
-  font-size: 4rem;
-}
-
-.btn-new {
-  font-family: "Amatic SC", cursive;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 0;
-  background: rgb(246, 177, 116);
-  color: #353535;
-  cursor: pointer;
-  transition: background 300ms;
-}
-
-button:hover,
-button:focus {
-  background: rgb(246, 177, 116, 0.8);
 }

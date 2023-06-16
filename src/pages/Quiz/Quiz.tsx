@@ -2,10 +2,10 @@ import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuizQuestionsQuery } from "../../api/useQuizQuestionsQuery";
 import { QuizParams } from "../../models/quiz";
-import { AnswerResult } from "../AnswerResult/AnswerResult";
-import { QuizQuestion } from "../QuizQuestion/QuizQuestion";
+import { AnswerResult } from "../../components/AnswerResult/AnswerResult";
+import { QuizQuestion } from "../../components/QuizQuestion/QuizQuestion";
 import { useQuizListQuery } from "../../api/useQuizListQuery";
-import { Evaluation } from "../Evaluation/Evaluation";
+import { Evaluation } from "../../components/Evaluation/Evaluation";
 
 enum QuizState {
   Question,

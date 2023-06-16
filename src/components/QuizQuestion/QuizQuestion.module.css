@@ -23,7 +23,7 @@
 
 .quizAnswers li {
   padding: 20px 20px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   background-color: #ffe9e4;
   cursor: pointer;
 }

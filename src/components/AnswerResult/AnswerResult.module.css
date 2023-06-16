@@ -30,8 +30,8 @@
 .answerBtn {
   padding: 20px 20px;
   border: none;
-  border-radius: 20px;
-  background-color: #f5f5f5;
+  border-radius: var(--border-radius);
+  background-color: var(--button-basic);
   cursor: pointer;
   margin-left: auto;
   margin-top: auto;

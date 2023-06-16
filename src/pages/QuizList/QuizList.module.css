@@ -8,8 +8,8 @@
 
 .quizList li {
   padding: 20px 20px;
-  border-radius: 20px;
-  background-color: #ffe9e4;
+  border-radius: var(--border-radius);
+  background-color: var(--button-pink-basic);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,7 +19,7 @@
 }
 
 .quizList li:hover {
-  background-color: #ffd8cf;
+  background-color: var(--button-pink-hover);
 }
 
 .quizListNumber {
@@ -27,7 +27,7 @@
 }
 
 .quizList li .listPhoto {
-  background: #fff;
+  background: var(--bg-light);
   height: 100%;
   border-radius: 50%;
   display: block;

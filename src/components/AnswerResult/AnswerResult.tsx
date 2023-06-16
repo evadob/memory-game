@@ -16,15 +16,6 @@ export const AnswerResult = ({
 }: AnswerResultProps) => {
   return (
     <div className={classes.container}>
-      {/* 
-      old code with the thumbs up icon
-      <img
-        className={
-          classes.answerPhoto +
-          (isCorrect ? "" : " " + classes.answerPhotoIncorrect)
-        }
-        src="../../../public/img/answerResultImg/thumbs-icon.png"
-      /> */}
       <img
         className={classes.answerPhoto}
         src={

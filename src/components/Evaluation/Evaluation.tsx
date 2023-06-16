@@ -9,14 +9,14 @@ export const Evaluation = ({ score, numberOfQuestions }: EvaluationProps) => {
   return (
     <>
       <div className={classes.evaluationContent}>
-        <h2 className={classes.evaluationScore}>{score < 4 ? "Nevadí, příště to vyjde" : "Výborně!"}</h2>
-        {score !== 0 ? (
-          <p>
-            Správně {score} z {numberOfQuestions}
-          </p>
-        ) : (
-          <p>Žádná odpověď správně.</p>
-        )}
+        <h2 className={classes.evaluationScore}>
+          {score < 4 ? "Nevadí, příště to vyjde" : "Výborně!"}
+        </h2>
+        <p>
+          {score !== 0
+            ? `Správně ${score} z ${numberOfQuestions}`
+            : "Žádná odpověď správně."}
+        </p>
       </div>
     </>
   );

@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 
+:root {
+  --heading-main: #513500;
+  --button-basic: #ffe6b8;
+  --button-hover: #ffcf77;
+  --button-pink-basic: #ffe9e4;
+  --button-pink-hover: #ffd8cf;
+  --bg-light: #fff;
+  --bg-grey: rgba(255, 255, 255, 0.2);
+
+  --border-radius: 20px;
+}
+
 *,
 *::before,
 *::after {

@@ -22,6 +22,7 @@
 
 body {
   font-family: "Amatic SC", cursive;
+  letter-spacing: 1px;
 }
 
 #root {

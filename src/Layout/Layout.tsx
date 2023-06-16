@@ -15,7 +15,7 @@ export const Layout = () => {
         <div className={classes.content}>
           {location.pathname === "/" ? null : (
             <img
-              src="../public/img/close-icon.svg"
+              src="/img/close-icon.svg"
               className={classes.closeIcon}
               onClick={handleClickBackButton}
             />

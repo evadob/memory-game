@@ -20,8 +20,8 @@ export const AnswerResult = ({
         className={classes.answerPhoto}
         src={
           isCorrect
-            ? "../../../public/img/answerResultImg/rightAnswer.png"
-            : "../../../public/img/answerResultImg/wrongAnswer.png"
+            ? "/img/answerResultImg/rightAnswer.png"
+            : "/img/answerResultImg/wrongAnswer.png"
         }
       />
       <div className={classes.answerContent}>

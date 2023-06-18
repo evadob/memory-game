@@ -38,6 +38,7 @@ h1::after {
 .btn {
   padding: 1rem 5rem;
   font-size: 2.5rem;
+  color: var(--heading-main);
   font-weight: bold;
   border: 1px solid rgb(198, 198, 198);
   font-family: "Amatic SC", cursive;
@@ -45,6 +46,10 @@ h1::after {
   cursor: pointer;
   border: 0;
   border-radius: 0.5rem;
+}
+
+.btn:visited {
+  color: var(--heading-main);
 }
 
 .btn:hover,

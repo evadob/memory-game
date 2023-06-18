@@ -26,6 +26,7 @@
 
 .answerBtn {
   font-family: var(--font-family);
+  color: var(--heading-main);
   letter-spacing: 1px;
   padding: 20px 20px;
   border: none;

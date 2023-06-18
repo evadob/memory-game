@@ -6,8 +6,8 @@
 }
 
 .container {
-  width: 950px;
-  background: rgba(253, 250, 246, 0.95);
+  width: 980px;
+  background: var(--bg-transparent);
   border-radius: var(--border-radius);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 1rem;
@@ -16,7 +16,8 @@
 }
 
 .content {
-  padding: 50px 85px;
+  padding: 3rem 3rem;
+  /* padding: 50px 85px; */
   /* width: 100%; */
 }
 
@@ -27,4 +28,18 @@
   top: 0;
   margin: 0.5rem;
   cursor: pointer;
+}
+
+@media (max-width: 920px) {
+  .container {
+    width: 640px;
+  }
+
+  .content {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .closeIcon {
+    width: 1rem;
+  }
 }

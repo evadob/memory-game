@@ -5,18 +5,15 @@
 }
 
 .answerPhoto {
-  max-height: 340px;
+  max-height: 100%;
   margin: auto;
-}
-
-.answerPhotoIncorrect {
-  transform: rotate(180deg);
 }
 
 .answerContent {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  font-size: 2rem;
 }
 
 .answerContent h2 {
@@ -24,10 +21,12 @@
 }
 
 .answerInfo {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .answerBtn {
+  font-family: var(--font-family);
+  letter-spacing: 1px;
   padding: 20px 20px;
   border: none;
   border-radius: var(--border-radius);
@@ -35,4 +34,29 @@
   cursor: pointer;
   margin-left: auto;
   margin-top: auto;
+}
+
+@media (max-width: 920px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .answerPhoto {
+    max-height: 150px;
+    margin: auto;
+  }
+
+  .answerContent h2 {
+    margin: 1rem auto 0 auto;
+    font-size: 2rem;
+  }
+  .answerBtn {
+    padding: 15px 15px;
+  }
+
+  .answerInfo {
+    font-size: 1.5rem;
+    text-align: center;
+  }
 }

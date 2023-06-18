@@ -14,7 +14,7 @@ export const HomePage = () => {
   return (
     <div className={classes.container}>
       <h1>
-        Prozkoumej tajemný svět starověkého Egypta 
+        Prozkoumej tajemný svět starověkého Egypta
         𓀀
       </h1>
       <h3>Vyber si hru, ve které procvičíš své znalosti:</h3>

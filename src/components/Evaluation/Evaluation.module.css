@@ -1,8 +1,21 @@
 .evaluationContent {
   font-size: 4rem;
+  color: var(--heading-main);
   text-align: center;
 }
 
 .evaluationScore {
   margin-bottom: 2rem;
+  /* color: var(--heading-main); */
+}
+
+@media (max-width: 920px) {
+  .evaluationContent {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .evaluationScore {
+    margin-bottom: 2rem;
+  }
 }

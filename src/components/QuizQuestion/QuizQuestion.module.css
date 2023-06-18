@@ -5,8 +5,8 @@
 }
 
 .quizPhoto {
-  width: 390px;
-  height: 390px;
+  width: 100%;
+  height: 100%;
   background-color: var(--button-pink-basic);
 }
 

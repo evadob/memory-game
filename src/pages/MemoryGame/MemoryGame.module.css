@@ -92,6 +92,7 @@ button:focus {
   }
 
   .cardGrid {
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     gap: 0.2rem;
   }
 

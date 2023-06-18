@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { OneCard } from "../../components/OneCard/OneCard";
+import { MemoryGameModal } from "../../components/MemoryGameModal/MemoryGameModal";
 import classes from "./MemoryGame.module.css";
 
 export interface Card {
@@ -24,7 +25,6 @@ export const MemoryGame = () => {
   const [choiceOne, setChoiceOne] = useState<number>(0);
   const [choiceTwo, setChoiceTwo] = useState<number>(0);
   const [disabled, setDisabled] = useState(false);
-  // state for the game finished
   const [gameFinished, setGameFinished] = useState(false);
 
   const shuffleCards = () => {
@@ -93,7 +93,8 @@ export const MemoryGame = () => {
     setScore((prevScore) => prevScore + 1);
     // finished game
     if (score + 1 === initialCards.length) {
-      setGameFinished(true); // nastavit stav dokončení hry na true
+      // set the game finished
+      setGameFinished(true);
     }
   };
 
@@ -130,20 +131,7 @@ export const MemoryGame = () => {
         <p className={classes.pMatches}>Skóre: {score}</p>
       </div>
 
-      {/* modal window if the game is finished */}
-      {gameFinished && (
-        <div className={classes.modalContainer}>
-          <div className={classes.modal}>
-            <div className={classes.modalContent}>
-              <h2 className={classes.modalHeading}>Gratulujeme!</h2>
-              <p className={classes.modalParagraph}>Vyhrál jsi</p>
-              <button className={classes.btnNew} onClick={shuffleCards}>
-                Hrát znovu
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {gameFinished && <MemoryGameModal onRestart={shuffleCards} />}
     </div>
   );
 };

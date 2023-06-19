@@ -1,11 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { useQuizQuestionsQuery } from "../../api/useQuizQuestionsQuery";
+import { useQuizQuestionQuery } from "../../api/useQuizQuestionsQuery";
 import { QuizParams } from "../../models/quiz";
 import { AnswerResult } from "../../components/AnswerResult/AnswerResult";
 import { QuizQuestion } from "../../components/QuizQuestion/QuizQuestion";
 import { useQuizListQuery } from "../../api/useQuizListQuery";
 import { Evaluation } from "../../components/Evaluation/Evaluation";
+import classes from "./Quiz.module.css";
 
 enum QuizState {
   Question,
@@ -23,12 +24,10 @@ export const Quiz = () => {
   const parsedQuizId = quizId ? +quizId : 0;
   const parsedQuestionNumber = questionNumber ? +questionNumber : 0;
 
-  const { data: question } = useQuizQuestionsQuery(
-    parsedQuizId,
-    parsedQuestionNumber
-  );
+  const { data: question, isLoading: quizQuestionIsLoading } =
+    useQuizQuestionQuery(parsedQuizId, parsedQuestionNumber);
 
-  const { data: quizList } = useQuizListQuery();
+  const { data: quizList, isLoading: quizListIsLoading } = useQuizListQuery();
 
   const numberOfQuestions = quizList?.find(
     (x) => x.id === parsedQuizId
@@ -53,12 +52,21 @@ export const Quiz = () => {
 
   const handleAnswerClick = (answerIndex: number) => {
     const result = question?.correctAnswerIndex === answerIndex;
-    // console.log(result);
     setQuizState(result ? QuizState.Correct : QuizState.Incorrect);
     if (result) {
       setScore((prev) => prev + 1);
     }
   };
+
+  useEffect(() => {
+    setQuizState(QuizState.Question);
+  }, [questionNumber]);
+
+  const isLoading = quizQuestionIsLoading || quizListIsLoading;
+
+  if (isLoading) {
+    return <div className={classes.loading}>Načítání...</div>;
+  }
 
   if (quizState === QuizState.Question) {
     return (

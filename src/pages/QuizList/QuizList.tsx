@@ -3,14 +3,16 @@ import { useQuizListQuery } from "../../api/useQuizListQuery";
 import classes from "./QuizList.module.css";
 
 export const QuizList = () => {
-  const { data: quizList } = useQuizListQuery();
+  const { data: quizList, isLoading } = useQuizListQuery();
   const navigate = useNavigate();
 
   const handleListItemClick = (quizId: number) => {
     navigate(`${quizId}/1`);
   };
 
-  // const funkceCoBudeSklonovat if/else
+  if (isLoading) {
+    return <div className={classes.loading}>Načítání...</div>;
+  }
 
   return (
     <ul className={classes.quizList}>
@@ -25,7 +27,9 @@ export const QuizList = () => {
             <div>{item.name}</div>
             {item.title}
           </div>
-          <span className={classes.quizListNumber}>{item.numberOfQuestions}</span>
+          <span className={classes.quizListNumber}>
+            {item.numberOfQuestions}
+          </span>
         </li>
       ))}
     </ul>

@@ -25,7 +25,9 @@ export const MemoryGame = () => {
   const [choiceOne, setChoiceOne] = useState<number>(0);
   const [choiceTwo, setChoiceTwo] = useState<number>(0);
   const [disabled, setDisabled] = useState(false);
-  const [gameFinished, setGameFinished] = useState(false);
+  // const [gameFinished, setGameFinished] = useState(false);
+
+  const gameFinished = score === initialCards.length;
 
   const shuffleCards = () => {
     // create a copy of the initial cards and add an id to them
@@ -44,8 +46,7 @@ export const MemoryGame = () => {
     setCards(shuffledCards);
     setTurns(0);
     setScore(0);
-    // finish the game
-    setGameFinished(false);
+    // setGameFinished(false);
   };
 
   // handle a choice
@@ -88,14 +89,15 @@ export const MemoryGame = () => {
     setDisabled(false);
   };
 
+
   // increase the score
   const increaseScore = () => {
     setScore((prevScore) => prevScore + 1);
     // finished game
-    if (score + 1 === initialCards.length) {
-      // set the game finished
-      setGameFinished(true);
-    }
+    // if (score + 1 === initialCards.length) {
+    //   // set the game finished
+    //   setGameFinished(true);
+    // }
   };
 
   // shuffle the cards on the first render

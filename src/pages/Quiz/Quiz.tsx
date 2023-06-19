@@ -53,7 +53,7 @@ export const Quiz = () => {
 
   const handleAnswerClick = (answerIndex: number) => {
     const result = question?.correctAnswerIndex === answerIndex;
-    console.log(result);
+    // console.log(result);
     setQuizState(result ? QuizState.Correct : QuizState.Incorrect);
     if (result) {
       setScore((prev) => prev + 1);

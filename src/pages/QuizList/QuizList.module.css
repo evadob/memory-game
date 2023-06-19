@@ -32,6 +32,11 @@
   display: block;
 }
 
+.loading {
+  font-size: 2rem;
+  text-align: center;
+}
+
 @media (max-width: 920px) {
   .quizList {
     grid-template-columns: 1fr;

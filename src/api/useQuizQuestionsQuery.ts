@@ -2,7 +2,7 @@ import { useQuery } from "react-query";
 import { supabase } from "./supabase";
 import { QuizQuestion } from "../models/quiz";
 
-const getQuizQuestions = async (
+const getQuizQuestion = async (
   questionSetId: number,
   questionNumber: number
 ) => {
@@ -15,10 +15,10 @@ const getQuizQuestions = async (
   return data?.[0] as QuizQuestion | undefined;
 };
 
-export const useQuizQuestionsQuery = (
+export const useQuizQuestionQuery = (
   questionSetId: number,
   questionNumber: number
 ) =>
   useQuery(["quizQuestions", questionSetId, questionNumber], async () =>
-    getQuizQuestions(questionSetId, questionNumber)
+    getQuizQuestion(questionSetId, questionNumber)
   );

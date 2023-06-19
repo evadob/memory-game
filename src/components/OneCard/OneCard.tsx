@@ -1,6 +1,5 @@
-import React from "react";
-import "./OneCard.css";
 import { Card } from "../../pages/MemoryGame/MemoryGame";
+import "./OneCard.css";
 
 interface OneCardProps {
   card: Card;

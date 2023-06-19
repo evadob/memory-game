@@ -11,7 +11,7 @@ export const QuizList = () => {
   };
 
   if (isLoading) {
-    return <div className={classes.loading}>Loading...</div>;
+    return <div className={classes.loading}>Načítání...</div>;
   }
 
   return (

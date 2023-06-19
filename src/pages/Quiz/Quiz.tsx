@@ -65,7 +65,7 @@ export const Quiz = () => {
   const isLoading = quizQuestionIsLoading || quizListIsLoading;
 
   if (isLoading) {
-    return <div className={classes.loading}>Loading...</div>;
+    return <div className={classes.loading}>Načítání...</div>;
   }
 
   if (quizState === QuizState.Question) {
